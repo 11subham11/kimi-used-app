@@ -23,7 +23,34 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository with Kimi AI image analysis API integration.
+
+## Kimi API Endpoint
+
+This application includes an endpoint that integrates with the Kimi AI image analysis API through OpenRouter.
+
+### GET /api/kimi
+
+This endpoint allows you to analyze images using Kimi AI.
+
+**Query Parameters:**
+
+- `text` (optional): The text prompt to send to Kimi AI. Default: "What is in this image?"
+- `imageUrl` (optional): URL of the image to analyze. Default: A sample nature boardwalk image
+
+**Example Request:**
+
+```
+GET /api/kimi?text=Describe this image in detail&imageUrl=https://example.com/image.jpg
+```
+
+**Environment Variables:**
+
+Make sure to set up the following environment variable in your `.env` file:
+
+```
+KIMI_K2_API_KEY=your_openrouter_api_key_here
+```
 
 ## Project setup
 

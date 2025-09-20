@@ -1,0 +1,7 @@
+import { AppService, KimiResponse } from './app.service';
+export declare class AppController {
+    private readonly appService;
+    constructor(appService: AppService);
+    getHello(): string;
+    getKimiResponse(text?: string, imageUrl?: string): Promise<KimiResponse>;
+}

@@ -1,0 +1,2 @@
+### Test Kimi API with default parameters
+GET http://localhost:3000/api/kimi
